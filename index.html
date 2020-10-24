@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="Projeto1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Angular JS</title>
+        
+    </head>
+    <body ng-controller="PrimeiroController">
+        <!--<div style='padding: 3%'>
+        <label>Nome:</label>
+        <input type="text" ng-model="meuNome" placeholder="Digite um nome aqui..."style='margin-bottom: 20px'><br>
+        <label>Email:</label>
+        <input type="email" ng-model="meuEmail" placeholder="Digite um nome aqui..."style='margin-bottom: 20px'>
+        <h1>Olá, {{ meuNome }}, {{meuEmail}}!</h1>
+        </div>-->
+        <input type="text" ng-model="mensagem">
+        <span>{{ mensagem }}</span><br>
+
+        <input type="text" ng-model="user.nome" placeholder="nome">
+        
+        <input type="text" ng-model="user.sobrenome" placeholder="sobrenome">
+        
+        <input type="text" ng-model="user.email" placeholder="email"><br>
+
+        <button class="btn" ng-click="sub()">Apertar</button>
+        <input type="number" ng-model="cres" placeholder="numero" ng-change="result()">
+        <input type="number" ng-model="cres2" placeholder="numero">
+        <!--<span>{{ result }}</span>-->
+        <button class="btn" ng-click="soma()">Apertar</button>
+        <pre>
+            {{user}}
+            {{cres}}
+        </pre>
+        
+        <script src="./assets/js/angular.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+    </body>
+</html>
